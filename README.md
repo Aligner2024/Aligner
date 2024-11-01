@@ -1,26 +1,25 @@
-<h1 align="center">Achieving Efficient Alignment through Learned Correction  </h1>
+<h1 align="center">(NeurIPS 2024 Oral) Aligner: Efficient Alignment by <br> Learning to Correct   </h1>
 
 With the rapid development of large language models (LLMs) and ever-evolving practical requirements, finding an efficient and effective alignment method has never been more critical. However, the tension between the complexity of current alignment methods and the need for rapid iteration in deployment scenarios necessitates the development of a model-agnostic alignment approach that can operate under these constraints. In this paper, we introduce *Aligner*, a novel and simple alignment paradigm that learns the correctional residuals between preferred and dispreferred answers using a small model.
 Designed as a model-agnostic, plug-and-play module, *Aligner* can be directly applied to various open-source and API-based models with only one-off training, making it suitable for rapid iteration.
-Notably, *Aligner* can be applied to powerful, large-scale upstream models. 
-It can even iteratively bootstrap the upstream models using corrected responses as synthetic human preference data, breaking through the model's performance ceiling.
+Notably, *Aligner* can be applied to any powerful, large-scale upstream models. 
+Moreover, it can even iteratively bootstrap the upstream models using corrected responses as synthetic human preference data, breaking through the model's performance ceiling.
 Our experiments demonstrate performance improvements by deploying the same *Aligner* model across 11 different LLMs, evaluated on the 3H dimensions (helpfulness, harmlessness, and honesty).
-Specifically, *Aligner*-7B has achieved an average improvement of **68.9\%** in helpfulness and **23.8\%** in harmlessness across the tested LLMs while also effectively reducing hallucination.
-In the Alpaca-Eval leaderboard, stacking *Aligner*-2B on GPT-4 Turbo improved its LC Win Rate from 55.0\% to **58.3\%**, surpassing GPT-4 Omni's 57.5\% Win Rate (community report).
+Specifically, *Aligner*-7B has achieved an average improvement of 68.9\% in helpfulness and 23.8\% in harmlessness across the tested LLMs while also effectively reducing hallucination.
+In the Alpaca-Eval leaderboard, stacking *Aligner*-2B on GPT-4 Turbo improved its LC Win Rate from 55.0\% to 58.3\%, surpassing GPT-4 Omni's 57.5\% Win Rate (community report).
 
-See our website for more details : https://aligner2024.github.io/
+See our website for more details : https://pku-aligner.github.io/
 
 ### Table of Contents  <!-- omit in toc -->
 
-- [<em>Aligner</em>: Achieving Efficient Alignment through
-Weak-to-Strong Correction](#Aligner)
+- [<em>Aligner</em>: Efficient Alignment by Learning to Correct](#Aligner)
 - [Installation](#installation)
 - [Training](#training)
 - [Dataset & Models](#dataset-models)
 - [Acknowledgment](#acknowledgment)
 
 
-## <em>Aligner</em>: Achieving Efficient Alignment through Weak-to-Strong Correction 
+## <em>Aligner</em>: Efficient Alignment by Learning to Correct 
 
 ### Architecture of the *Aligner* module.
 As a plug-and-play module *Aligner* stack upon an upstream LLM. The *Aligner* redistributes initial answers from the upstream model into more helpful and harmless answers, thus aligning the composed LLM responses with human intentions.
