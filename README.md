@@ -1,5 +1,13 @@
 <h1 align="center">(NeurIPS 2024 Oral) Aligner: Efficient Alignment by <br> Learning to Correct   </h1>
 
+This repository contains the source code for our NeurIPS 2024 paper [Aligner: Efficient Alignment by Learning to Correct](https://arxiv.org/abs/2402.02416).
+
+
+[Jiaming Ji*](https://jijiaming.com/), [Boyuan Chen*](https://cby-pku.github.io/), [Hantao Lou](https://htlou.github.io/), [Donghai Hong](https://scholar.google.com/citations?user=JQx-_5gAAAAJ), [Borong Zhang](https://github.com/muchvo), [Xuehai Pan](https://github.com/XuehaiPan), [Juntao Dai](https://scholar.google.com/citations?user=eRmX5AsAAAAJ&hl=zh-CN), [Tianyi Qiu](https://tianyiqiu.net/) and [Yaodong Yang](https://www.yangyaodong.com/)
+
+Work done by [PKU-Alignment Team](https://github.com/PKU-Alignment)
+
+## Abstract
 With the rapid development of large language models (LLMs) and ever-evolving practical requirements, finding an efficient and effective alignment method has never been more critical. However, the tension between the complexity of current alignment methods and the need for rapid iteration in deployment scenarios necessitates the development of a model-agnostic alignment approach that can operate under these constraints. In this paper, we introduce *Aligner*, a novel and simple alignment paradigm that learns the correctional residuals between preferred and dispreferred answers using a small model.
 Designed as a model-agnostic, plug-and-play module, *Aligner* can be directly applied to various open-source and API-based models with only one-off training, making it suitable for rapid iteration.
 Notably, *Aligner* can be applied to any powerful, large-scale upstream models. 
@@ -87,6 +95,20 @@ NOTE:
 
 ## Dataset & Models
 We have open-sourced a 20K [training dataset](https://huggingface.co/datasets/aligner/aligner-20K) and a [7B Aligner model](https://huggingface.co/aligner/aligner-7b-v1.0). Further dataset and models will come soon.
+
+
+## Citation
+
+Please cite our work if you find it useful and meaningful.
+
+```bibtex
+@article{ji2024aligner,
+  title={Aligner: Achieving efficient alignment through weak-to-strong correction},
+  author={Ji, Jiaming and Chen, Boyuan and Lou, Hantao and Hong, Donghai and Zhang, Borong and Pan, Xuehai and Dai, Juntao and Yang, Yaodong},
+  journal={arXiv preprint arXiv:2402.02416},
+  year={2024}
+}
+```
 
 ## Acknowledgment
 
