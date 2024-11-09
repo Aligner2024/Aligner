@@ -44,13 +44,13 @@ When integrated and assessed in conjunction with various upstream models, the *A
 </div>
 
 ### More Details
-For more details, please refer to our [website]( https://aligner2024.github.io/) 
+For more details, please refer to our [website]( https://pku-aligner.github.io/) 
 
 ## Installation
 Clone the source code from GitHub:
 
 ```bash
-git clone https://github.com/Aligner2024/aligner.git
+git clone https://github.com/cby-pku/aligner.git
 cd aligner
 ```
 
@@ -93,5 +93,20 @@ We have open-sourced a 20K [training dataset](https://huggingface.co/datasets/al
 This repository benefits from [LLaMA](https://ai.facebook.com/blog/large-language-model-llama-meta-ai), [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca), [DeepSpeed](https://github.com/microsoft/DeepSpeed), [DeepSpeed-Chat](https://github.com/microsoft/DeepSpeedExamples/tree/HEAD/applications/DeepSpeed-Chat) and [Safe-RLHF](https://github.com/PKU-Alignment/safe-rlhf).
 
 Thanks for their wonderful works and their efforts to further promote LLM research.
-Aligner and its related assets are built and open-sourced with love and respect.
+Aligner and its related assets are built and open-sourced with love and respect ❤️.
 
+This work is supported and funded by the Peking University.
+
+<table width="50%" cellspacing="0" cellpadding="0">
+  <tr align="center" valign="middle">
+    <td width="40%">
+      <a href="https://www.ai.pku.edu.cn/">
+        <img src="logo/pku-ai.png" width="100%"/>
+      </a>
+    </td>
+  </tr>
+</table>
+
+## License
+
+Aligner is released under Apache License 2.0.
