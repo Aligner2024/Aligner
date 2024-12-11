@@ -17,15 +17,15 @@
 # ==============================================================================
 """Raw datasets."""
 
-from safe_rlhf.datasets.raw.alpaca import AlpacaDataset
-from safe_rlhf.datasets.raw.firefly import FireflyDataset
-from safe_rlhf.datasets.raw.hh_rlhf import (
+from training.datasets.raw.alpaca import AlpacaDataset
+from training.datasets.raw.firefly import FireflyDataset
+from training.datasets.raw.hh_rlhf import (
     HhRLHFDialogueDataset,
     HhRLHFHarmlessDialogueDataset,
     HhRLHFHelpfulDialogueDataset,
 )
-from safe_rlhf.datasets.raw.moss import MOSS002SFT, MOSS003SFT
-from safe_rlhf.datasets.raw.safe_rlhf import (
+from training.datasets.raw.moss import MOSS002SFT, MOSS003SFT
+from training.datasets.raw.safe_rlhf import (
     SafeRLHF10KTrainDataset,
     SafeRLHF30KTestDataset,
     SafeRLHF30KTrainDataset,
@@ -35,13 +35,13 @@ from safe_rlhf.datasets.raw.safe_rlhf import (
 )
 
 
-from safe_rlhf.datasets.raw.correction import (
+from training.datasets.raw.correction import (
     CorrectionJSONDataset,
     BeavertailsJSONDataset,
     BeavertailsTestJSONDataset,
     BeavertailsTrainJSONDataset,
 )
-from safe_rlhf.datasets.raw.empathy import (
+from training.datasets.raw.empathy import (
     EmpathyJSONDataset
 )
 __all__ = [

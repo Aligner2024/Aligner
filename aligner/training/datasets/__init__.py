@@ -24,34 +24,34 @@ from typing import Dict
 import torch
 from torch.utils.data import Dataset
 
-from safe_rlhf.datasets import raw
-from safe_rlhf.datasets.base import (
+from training.datasets import raw
+from training.datasets.base import (
     CollatorBase,
     RawDataset,
     RawSample,
     TokenizedDataset,
     parse_dataset,
 )
-from safe_rlhf.datasets.preference import (
+from training.datasets.preference import (
     PreferenceBatch,
     PreferenceCollator,
     PreferenceDataset,
     PreferenceSample,
 )
-from safe_rlhf.datasets.prompt_only import (
+from training.datasets.prompt_only import (
     PromptOnlyBatch,
     PromptOnlyCollator,
     PromptOnlyDataset,
     PromptOnlySample,
 )
-from safe_rlhf.datasets.raw import *  # noqa: F403
-from safe_rlhf.datasets.safety_preference import (
+from training.datasets.raw import *  # noqa: F403
+from training.datasets.safety_preference import (
     SafetyPreferenceBatch,
     SafetyPreferenceCollator,
     SafetyPreferenceDataset,
     SafetyPreferenceSample,
 )
-from safe_rlhf.datasets.supervised import (
+from training.datasets.supervised import (
     SupervisedBatch,
     SupervisedCollator,
     SupervisedDataset,

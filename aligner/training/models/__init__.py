@@ -17,8 +17,8 @@
 # ==============================================================================
 """Utility functions for Hugging Face auto-models."""
 
-from safe_rlhf.models.pretrained import load_pretrained_models
-from safe_rlhf.models.score_model import AutoModelForScore, ScoreModelOutput
+from training.models.pretrained import load_pretrained_models
+from training.models.score_model import AutoModelForScore, ScoreModelOutput
 
 
 __all__ = ['load_pretrained_models', 'AutoModelForScore', 'ScoreModelOutput']

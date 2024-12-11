@@ -17,7 +17,7 @@
 # ==============================================================================
 """RLHF with PPO algorithm."""
 
-from safe_rlhf.algorithms.ppo.trainer import PPOTrainer
+from training.algorithms.ppo.trainer import PPOTrainer
 
 
 __all__ = ['PPOTrainer']

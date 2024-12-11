@@ -27,9 +27,9 @@ import torch
 import torch.distributed as dist
 from transformers import PreTrainedTokenizerBase
 
-from safe_rlhf.algorithms.ppo.trainer import PPOTrainer
-from safe_rlhf.models import AutoModelForScore, load_pretrained_models
-from safe_rlhf.utils import (
+from training.algorithms.ppo.trainer import PPOTrainer
+from training.models import AutoModelForScore, load_pretrained_models
+from training.utils import (
     batch_retokenize,
     gather_log_probabilities,
     get_all_reduce_max,

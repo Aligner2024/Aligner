@@ -17,7 +17,7 @@
 # ==============================================================================
 """Safe-RLHF with PPO-Lagrange algorithm."""
 
-from safe_rlhf.algorithms.ppo_lag.trainer import PPOLagTrainer
+from training.algorithms.ppo_lag.trainer import PPOLagTrainer
 
 
 __all__ = ['PPOLagTrainer']

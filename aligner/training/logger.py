@@ -36,7 +36,7 @@ from rich.console import Console  # pylint: disable=wrong-import-order
 from rich.table import Table  # pylint: disable=wrong-import-order
 from tqdm import tqdm  # pylint: disable=wrong-import-order
 
-from safe_rlhf.utils import is_main_process, rank_zero_only
+from training.utils import is_main_process, rank_zero_only
 
 
 if TYPE_CHECKING:

@@ -16,4 +16,4 @@
 # https://github.com/PKU-Alignment/safe-rlhf/safe_rlhf/models/score_model/gpt2/__init__.py
 # ==============================================================================
 
-from safe_rlhf.models.score_model.gpt2.modeling_gpt2 import GPT2ForScore
+from training.models.score_model.gpt2.modeling_gpt2 import GPT2ForScore

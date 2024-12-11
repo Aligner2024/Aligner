@@ -16,4 +16,4 @@
 # https://github.com/PKU-Alignment/safe-rlhf/safe_rlhf/models/score_model/gpt_neo/__init__.py
 # ==============================================================================
 
-from safe_rlhf.models.score_model.gpt_neo.modeling_gpt_neo import GPTNeoForScore
+from training.models.score_model.gpt_neo.modeling_gpt_neo import GPTNeoForScore

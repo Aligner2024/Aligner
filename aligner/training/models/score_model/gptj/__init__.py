@@ -16,4 +16,4 @@
 # https://github.com/PKU-Alignment/safe-rlhf/safe_rlhf/models/score_model/gptj/__init__.py
 # ==============================================================================
 
-from safe_rlhf.models.score_model.gptj.modeling_gptj import GPTJForScore
+from training.models.score_model.gptj.modeling_gptj import GPTJForScore

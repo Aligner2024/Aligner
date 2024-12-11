@@ -19,7 +19,7 @@
 
 import sys
 
-from safe_rlhf.algorithms.dpo.main import main
+from training.algorithms.dpo.main import main
 
 
 if __name__ == '__main__':

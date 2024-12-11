@@ -19,7 +19,7 @@
 
 import sys
 
-from safe_rlhf.values.cost.main import main
+from training.values.cost.main import main
 
 
 if __name__ == '__main__':

@@ -34,14 +34,14 @@ from transformers import (
 )
 from transformers.integrations.deepspeed import is_deepspeed_zero3_enabled
 
-from safe_rlhf.configs import (
+from training.configs import (
     DEFAULT_BOS_TOKEN,
     DEFAULT_EOS_TOKEN,
     DEFAULT_PAD_TOKEN,
     DEFAULT_UNK_TOKEN,
 )
-from safe_rlhf.models.score_model import AutoModelForScore
-from safe_rlhf.utils import is_main_process
+from training.models.score_model import AutoModelForScore
+from training.utils import is_main_process
 
 
 # Reference: https://github.com/tatsu-lab/stanford_alpaca/blob/main/train.py

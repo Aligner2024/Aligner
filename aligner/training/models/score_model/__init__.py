@@ -56,7 +56,7 @@ from transformers.models.auto.configuration_auto import (
 )
 from transformers.utils.generic import ModelOutput
 
-from safe_rlhf.models.normalizer import NormalizeFunction, Normalizer
+from training.models.normalizer import NormalizeFunction, Normalizer
 
 
 class _LazyAutoMappingInSafeRLHF(_LazyAutoMapping):

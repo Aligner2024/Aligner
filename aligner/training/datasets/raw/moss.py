@@ -24,7 +24,7 @@ import pathlib
 import re
 import zipfile
 
-from safe_rlhf.datasets.base import RawDataset, RawSample
+from training.datasets.base import RawDataset, RawSample
 
 
 __all__ = ['MOSS002SFT', 'MOSS003SFT']

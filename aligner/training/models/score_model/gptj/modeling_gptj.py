@@ -37,7 +37,7 @@ from transformers.utils.doc import (
 )
 from transformers.utils.model_parallel_utils import assert_device_map, get_device_map
 
-from safe_rlhf.models.score_model import ScoreModelMixin, ScoreModelOutput
+from training.models.score_model import ScoreModelMixin, ScoreModelOutput
 
 
 @add_start_docstrings(
@@ -131,7 +131,7 @@ class GPTJForScore(ScoreModelMixin, GPTJPreTrainedModel):
         Examples:
 
         ```python
-        >>> from safe_rlhf.models.score_model.llama.modeling_llama import LlamaForScore
+        >>> from training.models.score_model.llama.modeling_llama import LlamaForScore
         >>> from transformers import LlamaTokenizer
 
         >>> model = LlamaForScore.from_pretrained(PATH_TO_CONVERTED_WEIGHTS)

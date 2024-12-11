@@ -17,7 +17,7 @@
 # ==============================================================================
 """The main training script to supervised finetune a model."""
 
-from safe_rlhf.finetune.deepspeed import main
+from training.finetune.deepspeed import main
 
 
 if __name__ == '__main__':

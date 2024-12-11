@@ -16,4 +16,4 @@
 # https://github.com/PKU-Alignment/safe-rlhf/safe_rlhf/models/score_model/gpt_neox/__init__.py
 # ==============================================================================
 
-from safe_rlhf.models.score_model.gpt_neox.modeling_gpt_neox import GPTNeoXForScore
+from training.models.score_model.gpt_neox.modeling_gpt_neox import GPTNeoXForScore

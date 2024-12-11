@@ -17,15 +17,15 @@
 # ==============================================================================
 """Safe-RLHF: Safe Reinforcement Learning with Human Feedback."""
 
-from safe_rlhf import algorithms, configs, datasets, models, trainers, utils, values
-from safe_rlhf.algorithms import *  # noqa: F403
-from safe_rlhf.configs import *  # noqa: F403
-from safe_rlhf.datasets import *  # noqa: F403
-from safe_rlhf.models import *  # noqa: F403
-from safe_rlhf.trainers import *  # noqa: F403
-from safe_rlhf.utils import *  # noqa: F403
-from safe_rlhf.values import *  # noqa: F403
-from safe_rlhf.version import __version__
+from training import algorithms, configs, datasets, models, trainers, utils, values
+from training.algorithms import *  # noqa: F403
+from training.configs import *  # noqa: F403
+from training.datasets import *  # noqa: F403
+from training.models import *  # noqa: F403
+from training.trainers import *  # noqa: F403
+from training.utils import *  # noqa: F403
+from training.values import *  # noqa: F403
+from training.version import __version__
 
 
 __all__ = [

@@ -20,7 +20,7 @@
 from __future__ import annotations
 
 from datasets import load_dataset
-from safe_rlhf.datasets.base import RawDataset, RawSample
+from training.datasets.base import RawDataset, RawSample
 import json
 
 __all__ = ['AlpacaDataset','AlpacaJSONDataset']

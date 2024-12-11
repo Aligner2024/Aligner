@@ -23,8 +23,8 @@ from typing import Any
 import torch
 import torch.distributed as dist
 
-from safe_rlhf.trainers import RLTrainer
-from safe_rlhf.utils import (
+from training.trainers import RLTrainer
+from training.utils import (
     batch_retokenize,
     gather_log_probabilities,
     get_all_reduce_max,

@@ -16,7 +16,7 @@
 # https://github.com/PKU-Alignment/safe-rlhf/safe_rlhf/values/cost/__init__.py
 # ==============================================================================
 
-from safe_rlhf.values.cost.trainer import CostTrainer
+from training.values.cost.trainer import CostTrainer
 
 
 __all__ = ['CostTrainer']

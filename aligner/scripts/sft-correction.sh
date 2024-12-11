@@ -113,7 +113,7 @@ DEEPSPEED_ARGS+=("--master_port" "${MASTER_PORT}")
 exec 1> >(tee "${OUTPUT_DIR}/stdout.log" >&1) 2> >(tee "${OUTPUT_DIR}/stderr.log" >&2)
 
 deepspeed "${DEEPSPEED_ARGS[@]}" \
-	--module safe_rlhf.finetune \
+	--module training.finetune \
 	--train_datasets correction-json::${DATASET} \
 	--model_name_or_path "${MODEL_NAME_OR_PATH}" \
 	--max_length 2048 \

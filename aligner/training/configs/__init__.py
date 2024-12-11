@@ -17,9 +17,9 @@
 # ==============================================================================
 """Configurations and constants."""
 
-from safe_rlhf.configs import constants
-from safe_rlhf.configs.constants import *  # noqa: F403
-from safe_rlhf.configs.deepspeed_config import (
+from training.configs import constants
+from training.configs.constants import *  # noqa: F403
+from training.configs.deepspeed_config import (
     TEMPLATE_DIR,
     get_deepspeed_eval_config,
     get_deepspeed_train_config,

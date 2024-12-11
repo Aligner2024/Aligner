@@ -22,7 +22,7 @@ from __future__ import annotations
 from typing import ClassVar
 
 from datasets import load_dataset
-from safe_rlhf.datasets.base import RawDataset, RawSample
+from training.datasets.base import RawDataset, RawSample
 import json
 
 __all__ = [

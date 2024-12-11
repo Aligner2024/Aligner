@@ -33,11 +33,11 @@ from tqdm import tqdm
 from transformers import AutoModelForCausalLM, get_scheduler
 from transformers.integrations.deepspeed import HfDeepSpeedConfig
 
-from safe_rlhf.configs import ADAM_BETAS
-from safe_rlhf.datasets import TokenizedDataset
-from safe_rlhf.models import load_pretrained_models
-from safe_rlhf.trainers.base import TrainerBase
-from safe_rlhf.utils import get_optimizer_grouped_parameters, is_main_process, to_device
+from training.configs import ADAM_BETAS
+from training.datasets import TokenizedDataset
+from training.models import load_pretrained_models
+from training.trainers.base import TrainerBase
+from training.utils import get_optimizer_grouped_parameters, is_main_process, to_device
 
 
 class SupervisedTrainer(TrainerBase):

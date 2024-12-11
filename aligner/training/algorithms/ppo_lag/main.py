@@ -25,11 +25,11 @@ import torch.distributed as dist
 from transformers import SchedulerType
 from transformers.utils import is_torch_bf16_gpu_available, is_torch_tf32_available
 
-from safe_rlhf.algorithms.ppo_lag.trainer import PPOLagTrainer
-from safe_rlhf.configs import get_deepspeed_eval_config, get_deepspeed_train_config
-from safe_rlhf.datasets import parse_dataset
-from safe_rlhf.logger import set_logger_level
-from safe_rlhf.utils import seed_everything, str2bool
+from training.algorithms.ppo_lag.trainer import PPOLagTrainer
+from training.configs import get_deepspeed_eval_config, get_deepspeed_train_config
+from training.datasets import parse_dataset
+from training.logger import set_logger_level
+from training.utils import seed_everything, str2bool
 
 
 def parse_arguments() -> argparse.Namespace:

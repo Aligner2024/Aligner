@@ -16,4 +16,4 @@
 # https://github.com/PKU-Alignment/safe-rlhf/safe_rlhf/models/score_model/llama/__init__.py
 # ==============================================================================
 
-from safe_rlhf.models.score_model.llama.modeling_llama import LlamaForScore
+from training.models.score_model.llama.modeling_llama import LlamaForScore

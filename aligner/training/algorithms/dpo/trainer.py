@@ -27,10 +27,10 @@ import torch.nn.functional as F
 from transformers import AutoModelForCausalLM
 from transformers.integrations.deepspeed import HfDeepSpeedConfig
 
-from safe_rlhf.datasets import PreferenceDataset
-from safe_rlhf.models import load_pretrained_models
-from safe_rlhf.trainers import SupervisedTrainer
-from safe_rlhf.utils import gather_log_probabilities, get_all_reduce_mean
+from training.datasets import PreferenceDataset
+from training.models import load_pretrained_models
+from training.trainers import SupervisedTrainer
+from training.utils import gather_log_probabilities, get_all_reduce_mean
 
 
 class DPOTrainer(SupervisedTrainer):

@@ -26,7 +26,7 @@ from transformers import BloomModel, BloomPreTrainedModel, PretrainedConfig, Pre
 from transformers.models.bloom.modeling_bloom import _CONFIG_FOR_DOC, BLOOM_INPUTS_DOCSTRING
 from transformers.utils.doc import add_start_docstrings_to_model_forward, replace_return_docstrings
 
-from safe_rlhf.models.score_model import ScoreModelMixin, ScoreModelOutput
+from training.models.score_model import ScoreModelMixin, ScoreModelOutput
 
 
 class BloomForScore(ScoreModelMixin, BloomPreTrainedModel):
@@ -75,7 +75,7 @@ class BloomForScore(ScoreModelMixin, BloomPreTrainedModel):
         Examples:
 
         ```python
-        >>> from safe_rlhf.models.score_model.llama.modeling_llama import LlamaForScore
+        >>> from training.models.score_model.llama.modeling_llama import LlamaForScore
         >>> from transformers import LlamaTokenizer
 
         >>> model = LlamaForScore.from_pretrained(PATH_TO_CONVERTED_WEIGHTS)

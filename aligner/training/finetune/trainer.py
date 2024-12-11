@@ -25,9 +25,9 @@ import torch
 from transformers import AutoModelForCausalLM
 from transformers.modeling_outputs import CausalLMOutputWithPast
 
-from safe_rlhf.datasets import SupervisedDataset
-from safe_rlhf.trainers import SupervisedTrainer
-from safe_rlhf.utils import get_all_reduce_mean
+from training.datasets import SupervisedDataset
+from training.trainers import SupervisedTrainer
+from training.utils import get_all_reduce_mean
 
 
 class SupervisedFinetuneTrainer(SupervisedTrainer):

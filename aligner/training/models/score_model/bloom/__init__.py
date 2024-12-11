@@ -16,4 +16,6 @@
 # https://github.com/PKU-Alignment/safe-rlhf/safe_rlhf/models/score_model/bloom/__init__.py
 # ==============================================================================
 
-from safe_rlhf.models.score_model.bloom.modeling_bloom import BloomForScore
+from training.models.score_model.bloom.modeling_bloom import BloomForScore
+
+

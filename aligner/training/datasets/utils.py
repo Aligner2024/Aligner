@@ -22,7 +22,7 @@ import torch
 from torch.nn.utils.rnn import pad_sequence
 from torch.types import Number
 
-from safe_rlhf.configs import PROMPT_ASSISTANT, PROMPT_BEGIN, PROMPT_USER
+from training.configs import PROMPT_ASSISTANT, PROMPT_BEGIN, PROMPT_USER
 
 
 def format_prompt(

@@ -31,8 +31,8 @@ import deepspeed
 import torch.distributed as dist
 from transformers import CONFIG_NAME, WEIGHTS_NAME, PreTrainedModel, PreTrainedTokenizerBase
 
-from safe_rlhf.logger import Logger
-from safe_rlhf.utils import is_main_process
+from training.logger import Logger
+from training.utils import is_main_process
 
 
 class TrainerBase(metaclass=abc.ABCMeta):

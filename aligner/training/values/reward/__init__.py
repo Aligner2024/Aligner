@@ -16,7 +16,7 @@
 # https://github.com/PKU-Alignment/safe-rlhf/safe_rlhf/values/reward/__init__.py
 # ==============================================================================
 
-from safe_rlhf.values.reward.trainer import RewardTrainer
+from training.values.reward.trainer import RewardTrainer
 
 
 __all__ = ['RewardTrainer']

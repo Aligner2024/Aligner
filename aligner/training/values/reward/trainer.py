@@ -26,10 +26,10 @@ import torch.distributed as dist
 import torch.nn.functional as F
 from tqdm import tqdm
 
-from safe_rlhf.datasets import PreferenceDataset
-from safe_rlhf.models import AutoModelForScore, ScoreModelOutput
-from safe_rlhf.trainers import SupervisedTrainer
-from safe_rlhf.utils import get_all_reduce_mean, is_main_process, split_prompt_response, to_device
+from training.datasets import PreferenceDataset
+from training.models import AutoModelForScore, ScoreModelOutput
+from training.trainers import SupervisedTrainer
+from training.utils import get_all_reduce_mean, is_main_process, split_prompt_response, to_device
 
 
 class RewardTrainer(SupervisedTrainer):

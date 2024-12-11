@@ -23,8 +23,8 @@ from typing_extensions import TypedDict  # Python 3.10+
 
 import torch
 
-from safe_rlhf.datasets.base import CollatorBase, RawSample, TokenizedDataset
-from safe_rlhf.datasets.utils import format_prompt, right_padding
+from training.datasets.base import CollatorBase, RawSample, TokenizedDataset
+from training.datasets.utils import format_prompt, right_padding
 
 
 __all__ = [

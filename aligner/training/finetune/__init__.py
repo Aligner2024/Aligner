@@ -17,7 +17,7 @@
 # ==============================================================================
 """Supervised Fine-Tuning (SFT)."""
 
-from safe_rlhf.finetune.trainer import SupervisedFinetuneTrainer
+from training.finetune.trainer import SupervisedFinetuneTrainer
 
 
 __all__ = ['SupervisedFinetuneTrainer']

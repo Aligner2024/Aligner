@@ -24,8 +24,8 @@ from typing_extensions import TypedDict  # Python 3.10+
 import torch
 from torch.utils.data import Dataset, Subset
 
-from safe_rlhf.datasets.base import CollatorBase, RawSample, TokenizedDataset
-from safe_rlhf.datasets.utils import format_prompt, left_padding
+from training.datasets.base import CollatorBase, RawSample, TokenizedDataset
+from training.datasets.utils import format_prompt, left_padding
 
 
 __all__ = [

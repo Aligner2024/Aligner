@@ -43,11 +43,11 @@ from transformers import (
 )
 from transformers.integrations.deepspeed import HfDeepSpeedConfig
 
-from safe_rlhf.configs import ADAM_BETAS
-from safe_rlhf.datasets import DummyDataset, PromptOnlyBatch, PromptOnlyDataset, SupervisedDataset
-from safe_rlhf.models import AutoModelForScore, load_pretrained_models
-from safe_rlhf.trainers.base import TrainerBase
-from safe_rlhf.utils import (
+from training.configs import ADAM_BETAS
+from training.datasets import DummyDataset, PromptOnlyBatch, PromptOnlyDataset, SupervisedDataset
+from training.models import AutoModelForScore, load_pretrained_models
+from training.trainers.base import TrainerBase
+from training.utils import (
     get_all_reduce_mean,
     get_optimizer_grouped_parameters,
     is_main_process,

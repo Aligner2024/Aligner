@@ -35,7 +35,7 @@ from torch.utils.data import ConcatDataset, Dataset, Subset, default_collate
 from tqdm import tqdm
 from transformers.tokenization_utils import PaddingStrategy, TruncationStrategy
 
-from safe_rlhf.utils import is_main_process
+from training.utils import is_main_process
 
 
 __all__ = [

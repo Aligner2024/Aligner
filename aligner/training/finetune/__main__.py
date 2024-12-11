@@ -19,7 +19,7 @@
 
 import sys
 
-from safe_rlhf.finetune.main import main
+from training.finetune.main import main
 
 
 if __name__ == '__main__':

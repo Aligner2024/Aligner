@@ -17,8 +17,8 @@ from __future__ import annotations
 import json
 # from datasets import load_dataset
 
-from safe_rlhf.datasets.base import RawSample
-from safe_rlhf.datasets.base import RawDataset
+from training.datasets.base import RawSample
+from training.datasets.base import RawDataset
 CORRECTION_INSTRUCTION='##Question: {question}\n##Answer: {answer}\n##Correction: '
 
 __all__ = [

@@ -24,8 +24,8 @@ from typing import List, Optional, Tuple, Union
 import transformers
 from transformers.training_args import OptimizerNames
 
-from safe_rlhf.datasets import SupervisedDataset, parse_dataset
-from safe_rlhf.models import load_pretrained_models
+from training.datasets import SupervisedDataset, parse_dataset
+from training.models import load_pretrained_models
 
 
 @dataclass

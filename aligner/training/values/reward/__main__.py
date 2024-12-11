@@ -20,7 +20,7 @@
 
 import sys
 
-from safe_rlhf.values.reward.main import main
+from training.values.reward.main import main
 
 
 if __name__ == '__main__':

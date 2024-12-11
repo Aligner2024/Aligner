@@ -38,7 +38,7 @@ from transformers import PreTrainedTokenizerBase
 from transformers.modeling_outputs import ModelOutput
 from transformers.tokenization_utils import BatchEncoding, PaddingStrategy, TruncationStrategy
 
-from safe_rlhf.configs.constants import PROMPT_ASSISTANT
+from training.configs.constants import PROMPT_ASSISTANT
 
 
 __all__ = [
@@ -99,7 +99,7 @@ __PYTREE_REGISTRY_LOCK = threading.Lock()
 
 def __initialize_pytree_registry_once() -> None:
     # pylint: disable-next=import-outside-toplevel,unused-import
-    from safe_rlhf.models.score_model import ScoreModelOutput  # noqa: F401
+    from training.models.score_model import ScoreModelOutput  # noqa: F401
 
     global __PYTREE_INITIALIZED  # pylint: disable=global-statement
     if __PYTREE_INITIALIZED:

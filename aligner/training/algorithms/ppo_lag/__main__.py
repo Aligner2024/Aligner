@@ -19,7 +19,7 @@
 
 import sys
 
-from safe_rlhf.algorithms.ppo_lag.main import main
+from training.algorithms.ppo_lag.main import main
 
 
 if __name__ == '__main__':

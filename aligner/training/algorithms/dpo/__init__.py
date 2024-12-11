@@ -17,7 +17,7 @@
 # ==============================================================================
 """The Direct Preference Optimization (DPO) algorithm."""
 
-from safe_rlhf.algorithms.dpo.trainer import DPOTrainer
+from training.algorithms.dpo.trainer import DPOTrainer
 
 
 __all__ = ['DPOTrainer']

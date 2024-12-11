@@ -33,7 +33,7 @@ from transformers.utils.doc import (
     replace_return_docstrings,
 )
 
-from safe_rlhf.models.score_model import ScoreModelMixin, ScoreModelOutput
+from training.models.score_model import ScoreModelMixin, ScoreModelOutput
 
 
 @add_start_docstrings(
@@ -92,7 +92,7 @@ class GPTNeoForScore(ScoreModelMixin, GPTNeoPreTrainedModel):
         Examples:
 
         ```python
-        >>> from safe_rlhf.models.score_model.llama.modeling_llama import LlamaForScore
+        >>> from training.models.score_model.llama.modeling_llama import LlamaForScore
         >>> from transformers import LlamaTokenizer
 
         >>> model = LlamaForScore.from_pretrained(PATH_TO_CONVERTED_WEIGHTS)

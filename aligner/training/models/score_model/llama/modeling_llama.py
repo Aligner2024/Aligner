@@ -25,7 +25,7 @@ from transformers import LlamaModel, LlamaPreTrainedModel, PretrainedConfig, Pre
 from transformers.models.llama.modeling_llama import _CONFIG_FOR_DOC, LLAMA_INPUTS_DOCSTRING
 from transformers.utils.doc import add_start_docstrings_to_model_forward, replace_return_docstrings
 
-from safe_rlhf.models.score_model import ScoreModelMixin, ScoreModelOutput
+from training.models.score_model import ScoreModelMixin, ScoreModelOutput
 
 
 class LlamaForScore(ScoreModelMixin, LlamaPreTrainedModel):
@@ -76,7 +76,7 @@ class LlamaForScore(ScoreModelMixin, LlamaPreTrainedModel):
         Examples:
 
         ```python
-        >>> from safe_rlhf.models.score_model.llama.modeling_llama import LlamaForScore
+        >>> from training.models.score_model.llama.modeling_llama import LlamaForScore
         >>> from transformers import LlamaTokenizer
 
         >>> model = LlamaForScore.from_pretrained(PATH_TO_CONVERTED_WEIGHTS)
