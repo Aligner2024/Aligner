@@ -91,7 +91,7 @@ bash scripts/sft-correction.sh \
 NOTE: 
 1. You may need to update some of the parameters in the script according to your machine setup, such as the number of GPUs for training, the training batch size, etc. 
 2. Your dataset format should be consistent with aligner/template-dataset.json
-3. For more alignment training methods such as DPO or RLHF, please refer to the [Align-Anything](https://github.com/PKU-Alignment/align-anything) or [Safe-RLHF](https://github.com/PKU-Alignment/safe-rlhf) repository.
+3. For the reproduction of more alignment training methods such as DPO or RLHF, please refer to the [Align-Anything](https://github.com/PKU-Alignment/align-anything) or [Safe-RLHF](https://github.com/PKU-Alignment/safe-rlhf) repository.
 
 ## Register a new dataset
 
