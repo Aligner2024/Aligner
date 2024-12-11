@@ -91,6 +91,7 @@ bash scripts/sft-correction.sh \
 NOTE: 
 1. You may need to update some of the parameters in the script according to your machine setup, such as the number of GPUs for training, the training batch size, etc. 
 2. Your dataset format should be consistent with aligner/template-dataset.json
+3. For more alignment training methods such as DPO or RLHF, please refer to the [Align-Anything](https://github.com/PKU-Alignment/align-anything) or [Safe-RLHF](https://github.com/PKU-Alignment/safe-rlhf) repository.
 
 
 ## Dataset & Models
@@ -102,11 +103,12 @@ We have open-sourced a 20K [training dataset](https://huggingface.co/datasets/al
 Please cite our work if you find it useful and meaningful.
 
 ```bibtex
-@article{ji2024aligner,
-  title={Aligner: Achieving efficient alignment through weak-to-strong correction},
-  author={Ji, Jiaming and Chen, Boyuan and Lou, Hantao and Hong, Donghai and Zhang, Borong and Pan, Xuehai and Dai, Juntao and Yang, Yaodong},
-  journal={arXiv preprint arXiv:2402.02416},
-  year={2024}
+@inproceedings{ji2024aligner,
+  title={Aligner: Efficient Alignment by Learning to Correct},
+  author={Jiaming Ji and Boyuan Chen and Hantao Lou and Donghai Hong and Borong Zhang and Xuehai Pan and Tianyi Qiu and Juntao Dai and Yaodong Yang},
+  booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
+  year={2024},
+  url={https://openreview.net/forum?id=kq166jACVP}
 }
 ```
 
