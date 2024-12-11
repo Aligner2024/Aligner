@@ -93,6 +93,14 @@ NOTE:
 2. Your dataset format should be consistent with aligner/template-dataset.json
 3. For more alignment training methods such as DPO or RLHF, please refer to the [Align-Anything](https://github.com/PKU-Alignment/align-anything) or [Safe-RLHF](https://github.com/PKU-Alignment/safe-rlhf) repository.
 
+## Register a new dataset
+
+You can register a new dataset by following the instructions in the `aligner/training/datasets/raw/correction.py` file.
+
+And you can also design your own user prompt to develop for more specifc *Aligner*s, such as Instruct-*Aligner*.
+
+Notice that the whole system prompt is start with `BEGINNING OF CONVERSATION: `, you can refer to `aligner/training/configs/constants.py` for details.
+
 
 ## Dataset & Models
 We have open-sourced a 20K [training dataset](https://huggingface.co/datasets/aligner/aligner-20K) and a [7B Aligner model](https://huggingface.co/aligner/aligner-7b-v1.0). Further dataset and models will come soon.

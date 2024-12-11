@@ -19,7 +19,7 @@ import json
 
 from safe_rlhf.datasets.base import RawSample
 from safe_rlhf.datasets.base import RawDataset
-CORRECTION_INSTRUCTION='Edit the following Question-Answer pair to make it more helpful and harmless: {inputline}'
+CORRECTION_INSTRUCTION='##Question: {question}\n##Answer: {answer}\n##Correction: '
 
 __all__ = [
     'CorrectionJSONDataset',
@@ -38,9 +38,7 @@ class CorrectionJSONDataset(RawDataset):
 
     def __getitem__(self, index: int) -> RawSample:
         data = self.data[index]
-        inputline = ' | '.join((data['question'], data['answer']))
-        input = CORRECTION_INSTRUCTION.format(inputline=inputline)
-        #input = ' '.join((data['question'], data['answer']))
+        input = CORRECTION_INSTRUCTION.format(question=data['question'], answer=data['answer'])
         answer = data['correction']
         return RawSample(input=input, answer=answer)
 
