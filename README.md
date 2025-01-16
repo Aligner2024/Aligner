@@ -13,7 +13,7 @@ Designed as a model-agnostic, plug-and-play module, *Aligner* can be directly ap
 Notably, *Aligner* can be applied to any powerful, large-scale upstream models. 
 Moreover, it can even iteratively bootstrap the upstream models using corrected responses as synthetic human preference data, breaking through the model's performance ceiling.
 Our experiments demonstrate performance improvements by deploying the same *Aligner* model across 11 different LLMs, evaluated on the 3H dimensions (helpfulness, harmlessness, and honesty).
-Specifically, *Aligner*-7B has achieved an average improvement of 68.9\% in helpfulness and 23.8\% in harmlessness across the tested LLMs while also effectively reducing hallucination.
+Specifically, *Aligner*-7B has achieved an average improvement of 68.9\% in helpfulness and 22.8\% in harmlessness across the tested LLMs while also effectively reducing hallucination.
 In the Alpaca-Eval leaderboard, stacking *Aligner*-2B on GPT-4 Turbo improved its LC Win Rate from 55.0\% to 58.3\%, surpassing GPT-4 Omni's 57.5\% Win Rate (community report).
 
 See our website for more details : https://pku-aligner.github.io/
