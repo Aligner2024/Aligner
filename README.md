@@ -18,6 +18,20 @@ In the Alpaca-Eval leaderboard, stacking *Aligner*-2B on GPT-4 Turbo improved it
 
 See our website for more details : https://pku-aligner.github.io/
 
+## Citation
+
+Please cite our work if you find it useful and meaningful.
+
+```bibtex
+@inproceedings{ji2024aligner,
+  title={Aligner: Efficient Alignment by Learning to Correct},
+  author={Jiaming Ji and Boyuan Chen and Hantao Lou and Donghai Hong and Borong Zhang and Xuehai Pan and Tianyi Qiu and Juntao Dai and Yaodong Yang},
+  booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
+  year={2024},
+  url={https://openreview.net/forum?id=kq166jACVP}
+}
+```
+
 ### Table of Contents  <!-- omit in toc -->
 
 - [<em>Aligner</em>: Efficient Alignment by Learning to Correct](#Aligner)
@@ -105,20 +119,6 @@ Notice that the whole system prompt is start with `BEGINNING OF CONVERSATION: `,
 ## Dataset & Models
 We have open-sourced a 20K [training dataset](https://huggingface.co/datasets/aligner/aligner-20K) and a [7B Aligner model](https://huggingface.co/aligner/aligner-7b-v1.0). Further dataset and models will come soon.
 
-
-## Citation
-
-Please cite our work if you find it useful and meaningful.
-
-```bibtex
-@inproceedings{ji2024aligner,
-  title={Aligner: Efficient Alignment by Learning to Correct},
-  author={Jiaming Ji and Boyuan Chen and Hantao Lou and Donghai Hong and Borong Zhang and Xuehai Pan and Tianyi Qiu and Juntao Dai and Yaodong Yang},
-  booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
-  year={2024},
-  url={https://openreview.net/forum?id=kq166jACVP}
-}
-```
 
 ## Acknowledgment
 
